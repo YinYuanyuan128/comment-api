@@ -1,19 +1,9 @@
 {
   "version": 2,
-  "functions": {
-    "api/*.js": {
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
     }
-  ],
-  "build": {
-    "env": {
-      "NODE_VERSION": "18"
-    }
-  }
+  ]
 }
